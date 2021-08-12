@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+<style type="text/css">
+	#Ubtn{
+		width: 180px;height: 50px;font-size: 16px;
+	}
+	
+input{
+	width: 360px;
+	height: 50px;
+	font-size: 14px;
+	border:1px solid skyblue;
+	border-radius: 5px;
+
+}
+</style>
+</head>
+<body ng-app="myapp" ng-controller="myctrl" style="background-image: url(login.jpg);">
+	<div class="container-fluid">
+		<div class="container-fluid text-right" style="background-color:pink;">
+			<b><span class="glyphicon glyphicon-earphone"></span>:+91 9572112409</b> &nbsp; 
+     			<b><span class="glyphicon glyphicon-envelope"></span>: Contact@ekart.com</b> &nbsp;
+		</div>
+	<div class="container-fluid">
+          			<b><font face="Ink Free" color="white" size=6px>E-kart<img src="logo1.png" width=50 height=50></font></b> &nbsp;<b class="bg bg-info"><i>Welcome to India's No.1 E-Commerce site</i></b>
+          		</div>
+         <div style="text-align: center;position: relative;margin-top: 3%;">
+         	<h2 style="font-family: Segoe Script;color: white;">User Registration</h2>
+         	<span style="color:#7CF7CA;font-size: 50px;" class="glyphicon glyphicon-user"></span>
+         	<form action="#" method="post">
+
+         		<input type="text" name="usename" placeholder="Enter Name" required><br>
+         		<input type="email" name="email" placeholder="Enter Email" required><br>
+         		<input type="number" name="mobile" placeholder="Enter Mobile No." required><br>
+         		<input type="password" name="password" placeholder="Enter Password" required><br>
+         		<input type="password" name="cnfpassword" placeholder="Enter Confirm Password" required><br>
+         		<input class="btn btn-primary" type="submit" name="submit" value="Register" required>
+
+         	</form>
+         		<font color="white" face="Segoe Script" size="4">Already Registerd?</font>&nbsp;&nbsp;<a href="login.html"><font size="4" color="skyblue" face="Segoe Script">LogIn Here</font></a>
+         </div>
+     	
+</div>
+<div class="container"><br>
+			<div style="font-family: Segoe Script;background-color:#dcdcdc;font-weight: bold;">
+				<h10><center>Copyright &copy;Tausif Ahmad</center></h10>
+			</div>
+ 		</div>
+ 	</div>
+</body>
+<script>
+var app=angular.module("myapp",[]);
+app.controller("myctrl",function($scope){
+$scope.fun1=function(){
+$scope.chk1=true;
+$scope.chk2=true;
+}
+$scope.fun2=function(){
+$scope.chk1=false;
+$scope.chk2=false;
+}
+});
+</script>
+</html>
